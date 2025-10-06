@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 – Flexbox Tasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Task 0. Navigation Bar -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="./index.html">Flex&Grid</a>
+        <nav class="main-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="./index.html" aria-current="page">Flexbox</a></li>
+            <li><a href="./grid.html">Grid</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="#cards">Cards</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <h1>Part 1. Flexbox</h1>
+
+      <!-- Task 1. Card Row -->
+      <section id="cards" class="section">
+        <header class="section-header">
+          <h2>Card Row</h2>
+          <p>Three equal-height cards in a responsive row with hover effects.</p>
+        </header>
+
+        <div class="card-row">
+          <article class="card">
+            <img class="card-media" src="./assets/images/img1.svg" alt="Abstract illustration 1" />
+            <div class="card-body">
+              <h3 class="card-title">Starter</h3>
+              <p class="card-text">A simple card with a title, some descriptive text, and a call-to-action button.</p>
+              <button class="btn">Learn more</button>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-media" src="./assets/images/img2.svg" alt="Abstract illustration 2" />
+            <div class="card-body">
+              <h3 class="card-title">Pro</h3>
+              <p class="card-text">All cards stretch to equal height. Content is arranged using Flexbox inside.</p>
+              <button class="btn">Try now</button>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-media" src="./assets/images/img3.svg" alt="Abstract illustration 3" />
+            <div class="card-body">
+              <h3 class="card-title">Ultimate</h3>
+              <p class="card-text">A hover effect adds depth via shadow and a subtle lift for better affordance.</p>
+              <button class="btn">Get started</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Flex&Grid Demo • <a href="./REPORT.md">Report</a></p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 – Portfolio (Flex + Grid)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="./index.html">Flex&Grid</a>
+        <nav class="main-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="./index.html">Flexbox</a></li>
+            <li><a href="./grid.html">Grid</a></li>
+            <li><a href="./portfolio.html" aria-current="page">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Task 4. Portfolio Page -->
+    <main class="container main-content portfolio-layout">
+      <section class="projects-area">
+        <header class="section-header">
+          <h1>Projects</h1>
+          <p>Grid splits main area; project cards use Flexbox inside.</p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="card project-card">
+            <img class="card-media" src="./assets/images/img1.svg" alt="Project 1" />
+            <div class="card-body">
+              <h3 class="card-title">Project One</h3>
+              <p class="card-text">Responsive layout using CSS Grid for page structure and Flexbox for inner alignment.</p>
+              <div class="card-actions">
+                <a class="btn" href="#">View</a>
+                <a class="btn btn-ghost" href="#">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project-card">
+            <img class="card-media" src="./assets/images/img4.svg" alt="Project 2" />
+            <div class="card-body">
+              <h3 class="card-title">Project Two</h3>
+              <p class="card-text">Cards maintain equal heights; buttons pinned using Flexbox column layout.</p>
+              <div class="card-actions">
+                <a class="btn" href="#">View</a>
+                <a class="btn btn-ghost" href="#">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project-card">
+            <img class="card-media" src="./assets/images/img7.svg" alt="Project 3" />
+            <div class="card-body">
+              <h3 class="card-title">Project Three</h3>
+              <p class="card-text">Consistent spacing and alignment across components, with tidy visual hierarchy.</p>
+              <div class="card-actions">
+                <a class="btn" href="#">View</a>
+                <a class="btn btn-ghost" href="#">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="info-area">
+        <div class="panel">
+          <h2>About</h2>
+          <p>This portfolio demonstrates combining Flexbox and Grid effectively.</p>
+        </div>
+        <div class="panel">
+          <h2>Contacts</h2>
+          <ul class="stack">
+            <li>Email: student@example.com</li>
+            <li>GitHub: github.com/student</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Flex&Grid Demo • <a href="./REPORT.md">Report</a></p>
+      </div>
+    </footer>
+  </body>
+  </html>
